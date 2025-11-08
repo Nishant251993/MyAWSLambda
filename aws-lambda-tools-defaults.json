@@ -1,17 +1,27 @@
+
 {
-  "Information": [
-    "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
-    "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
-    "dotnet lambda help",
-    "All the command line options for the Lambda command can be specified in this file."
-  ],
-  "profile": "default",
-  "region": "ap-south-1",
-  "configuration": "Release",
-  "framework": "netcoreapp3.1",
-  "function-runtime": "dotnetcore3.1",
-  "function-memory-size": 256,
-  "function-timeout": 30,
-  "function-handler": "MyAWSLambda::MyAWSLambda.Function::FunctionHandler",
-  "function-name": "MyAWSLambda"
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "default",
+    "region"      : "ap-south-1",
+    "configuration" : "Release",
+    "framework"     : "net6.0",
+    "function-runtime" : "dotnet6",
+    "function-memory-size" : 256,
+    "function-timeout"     : 30,
+    "function-handler"     : "MyAWSLambda::MyAWSLambda.Function::FunctionHandler",
+    "function-name"        : "MyFirstLamdaFunction",
+    "function-description" : "My First Self Created Lamda Function",
+    "package-type"         : "Zip",
+    "function-role"        : "arn:aws:iam::694226983498:role/lambda_exec_MyFirstLamdaFunction",
+    "function-architecture" : "x86_64",
+    "function-subnets"      : "",
+    "function-security-groups" : "",
+    "tracing-mode"             : "PassThrough",
+    "environment-variables"    : "",
+    "image-tag"                : ""
 }
